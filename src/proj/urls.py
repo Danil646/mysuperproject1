@@ -19,7 +19,7 @@ from phonebook.views import HomePageView, AddPhoneFormView, DeletePhoneView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('add', AddPhoneFormView.as_view(), name='add'),
+    path('add/', AddPhoneFormView.as_view(), name='add'),
     path('delete/<int:pk>', DeletePhoneView.as_view(), name='delete'),
     path('', HomePageView.as_view(), name='home')
 ]
